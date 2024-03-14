@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientLogin"
+    android:background="@drawable/loginbackground">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Patient"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_margin="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_color"
+        android:elevation="35dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        tools:layout_editor_absoltueX="16dp"
+        tools:layout_editor_absoluteX="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp">
+            <EditText
+                android:drawableStart="@drawable/ic_baseline_person_outline_24"
+                android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                android:id="@+id/id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Mobile no."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center">
+            <EditText
+                android:drawableLeft="@drawable/ic_baseline_https_24"
+                android:drawableStart="@drawable/ic_baseline_https_24"
+                android:id="@+id/pass"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:hint="Password" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/p_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:elevation="20dp"
+                android:text="Login"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/create_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Create New Account"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
